@@ -1,4 +1,12 @@
 import express from "express";
+import recipeRouter from "./routes/recipeRoutes";
+//TO-DO
+// import authorRouter
+// import authRouter
+
+
+/*
+import express from "express";
 import mongoose from "mongoose";
 import recipeRoutes from "./routes/recipes";
 import authorRoutes from "./routes/authors";
@@ -18,3 +26,4 @@ app.use(authorRoutes);
 app.listen(port, () => {
   console.log(`Servidor prendido, link del host: http://localhost:${port}/`);
 });
+*/
