@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { createRecipe, deleteRecipe, getAllRecipes, getRecipeById, updateRecipe } from "../controllers/recipe/index";
+import { createRecipe, deleteRecipe, getAllRecipes, getRecipeById, updateRecipe } from "../controllers/recipe/recipeIndex";
 import { authorize } from "../middlewares/auth/authorize";
 import { protect } from "../middlewares/auth/protect";
 //import compressionMiddleware

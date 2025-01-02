@@ -26,7 +26,7 @@ export const createRecipeValidator = [
     .withMessage("The description must have less than 300 characters."),
   body("image")
     .optional()
-    .custom((value, { req }) => {
+    .custom((_, { req }) => {
       const image = req?.files?.image;
       if (!image) {
         throw new Error("Image is required.");

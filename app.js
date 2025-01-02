@@ -1,7 +1,7 @@
 import express from "express";
 import recipeRouter from "./routes/recipeRoutes";
+import authorRouter from "./routes/authorRoutes";
 //TO-DO
-// import authorRouter
 // import authRouter
 
 
