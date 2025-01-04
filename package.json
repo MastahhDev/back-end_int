@@ -2,6 +2,7 @@
   "name": "back-recipes",
   "version": "1.0.0",
   "main": "index.js",
+  "description": "",
   "type": "module",
   "scripts": {
     "start": "node server.js",
@@ -10,17 +11,24 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
+    "bcrypt": "^5.1.1",
     "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
     "express": "^4.21.2",
+    "express-fileupload": "^1.5.1",
+    "express-validator": "^7.2.1",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.9.2",
+    "mongoose-paginate-v2": "^1.8.5",
     "uuid": "^11.0.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
     "eslint": "^9.17.0",
+    "eslint-plugin-node": "^11.1.0",
     "globals": "^15.14.0",
     "nodemon": "^3.1.9"
   }
