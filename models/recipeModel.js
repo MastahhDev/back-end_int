@@ -3,7 +3,7 @@ import moongosePaginate from "mongoose-paginate-v2";
 import AuthorModel from "./authorModel.js";
 
 const RecipeSchema = new Schema({
-    author: { type: Schema.Types.ObjectId, ref: "Author", required: true },
+    author: { type: Schema.Types.ObjectId, ref: "AuthorModel", required: true },
     createdDate: { type: Date, default: () => Date.now() },
     stepByStep: { type: String, required: true },
     description: { type: String },

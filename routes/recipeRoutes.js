@@ -8,7 +8,7 @@ import validationMiddleware from "../middlewares/validationMiddleware.js";
 
 const router = Router();
 
-router.get("/", protect/*, compressionMiddleware*/, getAllRecipes);
+router.get("/"/*, compressionMiddleware*/, getAllRecipes);
 router.get("/:id", protect, getRecipeById);
 router.post("/", protect, authorize("admin"), createRecipeValidator, validationMiddleware, createRecipe);
 router.put("/:id", protect, authorize("admin"), updateRecipe);

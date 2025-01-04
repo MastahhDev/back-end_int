@@ -18,6 +18,7 @@ app.use(
   })
 );
 
+app.use("/", recipeRouter)
 app.use("/api/recipes", recipeRouter);
 app.use("/api/authors", authorRouter);
 app.use("/api/auth", authRouter);
