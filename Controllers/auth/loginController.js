@@ -1,6 +1,6 @@
-import UserModel from "../../models/userModel";
-import { generateAccessToken } from "../../utils/auth/generateAccessToken";
-import { generateRefreshToken } from "../../utils/auth/generateRefreshToken";
+import UserModel from "../../models/userModel.js";
+import { generateAccessToken } from "../../utils/auth/generateAccessToken.js";
+import { generateRefreshToken } from "../../utils/auth/generateRefreshToken.js";
 
 export const loginController = async (req, res) => {
 

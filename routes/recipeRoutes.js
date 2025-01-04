@@ -1,10 +1,10 @@
 import { Router } from "express";
-import { createRecipe, deleteRecipe, getAllRecipes, getRecipeById, updateRecipe } from "../controllers/recipe/recipeIndex";
-import { authorize } from "../middlewares/auth/authorize";
-import { protect } from "../middlewares/auth/protect";
+import { createRecipe, deleteRecipe, getAllRecipes, getRecipeById, updateRecipe } from "../controllers/recipe/recipeIndex.js";
+import { authorize } from "../middlewares/auth/authorize.js";
+import { protect } from "../middlewares/auth/protect.js";
 //import compressionMiddleware
-import { createRecipeValidator } from "../validators/createRecipeValidator";
-import validationMiddleware from "../middlewares/validationMiddleware";
+import { createRecipeValidator } from "../validators/createRecipeValidator.js";
+import validationMiddleware from "../middlewares/validationMiddleware.js";
 
 const router = Router();
 

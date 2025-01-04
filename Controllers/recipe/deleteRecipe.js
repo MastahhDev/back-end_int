@@ -1,4 +1,4 @@
-import RecipeModel from "../../models/recipeModel";
+import RecipeModel from "../../models/recipeModel.js";
 
 export const deleteRecipe = async (req, res) => {
     try {

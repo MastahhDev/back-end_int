@@ -1,6 +1,6 @@
 import jwt from "jsonwebtoken";
-import { JWT_SECRET } from "../config/config.js";
-import UserModel from "../models/userModel.js";
+import { JWT_SECRET } from "../../config/config.js";
+import UserModel from "../../models/userModel.js";
 
 export const protect = async (req, res, next) => {
   let token;

@@ -1,5 +1,5 @@
 import mongoose, { Schema } from "mongoose";
-import RecipeModel from "./recipeModel";
+import RecipeModel from "./recipeModel.js";
 
 const AuthorSchema = new Schema({
     name: { type: String, minlength: 2, maxlength: 30, required: true },

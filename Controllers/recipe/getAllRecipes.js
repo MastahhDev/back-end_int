@@ -1,4 +1,4 @@
-import RecipeModel from "../../models/recipeModel";
+import RecipeModel from "../../models/recipeModel.js";
 
 const validSortFields = ["createdDate", "title", "description"];
 

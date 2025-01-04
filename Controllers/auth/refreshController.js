@@ -1,6 +1,6 @@
 import jwt from "jsonwebtoken";
-import { JWT_SECRET } from "../../../../blog-app/config/config";
-import { generateAccessToken } from "../../utils/auth/generateAccessToken";
+import { JWT_SECRET } from "../../config/config.js";
+import { generateAccessToken } from "../../utils/auth/generateAccessToken.js";
 
 export const refreshController = (req, res) =>{
 

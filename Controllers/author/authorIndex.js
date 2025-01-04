@@ -1,6 +1,6 @@
-import { createAuthor } from "./createAuthor";
-import { deleteAuthor } from "./deleteAuthor";
-import { getAllAuthors } from "./getAllAuthors";
-import { updateAuthor } from "./updateAuthor";
+import { createAuthor } from "./createAuthor.js";
+import { deleteAuthor } from "./deleteAuthor.js";
+import { getAllAuthors } from "./getAllAuthors.js";
+import { updateAuthor } from "./updateAuthor.js";
 
 export { createAuthor, deleteAuthor, getAllAuthors, updateAuthor };

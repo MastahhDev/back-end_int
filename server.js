@@ -1,6 +1,6 @@
 import app from "./app.js";
 import mongoose from "mongoose";
-import { MONGO_URI, PORT } from "../../blog-app/config/config.js";
+import { MONGO_URI, PORT } from "./config/config.js";
 
 mongoose
   .connect(MONGO_URI) //Connect to mongo
