@@ -10,7 +10,6 @@ import { protect } from "../middlewares/auth/protect.js";
 //import compressionMiddleware
 import { createRecipeValidator } from "../validators/createRecipeValidator.js";
 import validationMiddleware from "../middlewares/validationMiddleware.js";
-import { getAllRecipes } from "../controllers/recipe/getAllRecipes.js";
 
 const router = Router();
 
