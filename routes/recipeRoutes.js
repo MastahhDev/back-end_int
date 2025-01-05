@@ -1,10 +1,16 @@
 import { Router } from "express";
-import { createRecipe, deleteRecipe, getAllRecipes, getRecipeById, updateRecipe } from "../controllers/recipe/recipeIndex.js";
+import { createRecipe } from "../controllers/recipe/createRecipe.js";
+import { deleteRecipe } from "../controllers/recipe/deleteRecipe.js";
+import { getAllRecipes } from "../controllers/recipe/getAllRecipes.js";
+import { getRecipeById } from "../controllers/recipe/getRecipeById.js";
+import { updateRecipe } from "../controllers/recipe/updateRecipe.js";
+// import { createRecipe, deleteRecipe, getAllRecipes, getRecipeById, updateRecipe } from "../controllers/recipe/recipeIndex.js";
 import { authorize } from "../middlewares/auth/authorize.js";
 import { protect } from "../middlewares/auth/protect.js";
 //import compressionMiddleware
 import { createRecipeValidator } from "../validators/createRecipeValidator.js";
 import validationMiddleware from "../middlewares/validationMiddleware.js";
+import { getAllRecipes } from "../controllers/recipe/getAllRecipes.js";
 
 const router = Router();
 
