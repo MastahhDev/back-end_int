@@ -12,13 +12,13 @@ const RecipeSchema = new Schema({
     imageType: { type: String },
 });
 
-RecipeSchema.post("save", async (doc) => { //Increase the author's blogCount
-    await AuthorModel.findByIdAndUpdate(doc.author, { $inc: { blogsCount: 1 } });
+RecipeSchema.post("save", async (doc) => { //Increase the author's recipeCount
+    await AuthorModel.findByIdAndUpdate(doc.author, { $inc: { recipesCount: 1 } });
 });
 
 RecipeSchema.post("findOneAndDelete", async (doc) => { //Delete post
     if (doc.author) {
-      await AuthorModel.findByIdAndUpdate(doc.author, { $inc: { blogsCount: -1 } });
+      await AuthorModel.findByIdAndUpdate(doc.author, { $inc: { recipesCount: -1 } });
     }
 });
 
